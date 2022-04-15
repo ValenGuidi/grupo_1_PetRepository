@@ -131,8 +131,6 @@ main img{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-content: center;
-    align-items: flex-start; */
     width: 42%;
     margin-left: auto;  
     margin-right: auto;
@@ -156,11 +154,9 @@ main img{
 }
 .descripcion-promocion{
     border-top: var(--fondo) solid 1px;
-    /* height: 40%; */
+    
 }
-.img-producto{
-    /* height: 60%; */
-}
+
 .fa-bars{
     background-color:var(--naranjac);
     font-size: 25px;
