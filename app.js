@@ -16,3 +16,7 @@ app.listen(3040, () =>{
 app.get("/", (req,res) => {
     res.sendFile(path.join(__dirname,"/views/index.html"))
 })
+
+app.get("/product-details", (req,res) => {
+    res.sendFile(path.join(__dirname,"/views/product-details.html"))
+})
