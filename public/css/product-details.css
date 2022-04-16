@@ -20,10 +20,9 @@ header{
 }
 main{
     background-color: rgba(235, 235, 235, 0.801);
-    width: 95%;
+    width: 85%;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
     font-size: 5vw;
     padding-bottom: 5%;
     margin-bottom: -18px;
@@ -124,39 +123,17 @@ footer > section > i{
     color: var(--naranjao);
     font-size: 37px;
 }
-main img{
-    height: 250px;
-}
-.promocion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 42%;
-    margin-left: auto;  
-    margin-right: auto;
-    background-color: white;
-    
-}
-.btn-carrito{
+
+.btn-carrito {
     background-color: var(--naranjac);
     color: var(--grisc);
-    width: 62%;
+    width: 98%;
     height: 27px;
     border-radius: 5%;
     border: 2px var(--celeste) solid;
     margin-bottom: 7px;
+    text-align: center;
 }
-.contenedor-promocion{
-    align-items: stretch;
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: 2px solid white;
-}
-.descripcion-promocion{
-    border-top: var(--fondo) solid 1px;
-    
-}
-
 .fa-bars{
     background-color:var(--naranjac);
     font-size: 25px;
@@ -169,22 +146,44 @@ main img{
     margin-top: 15px;
     border-radius: 20%;
 }
-.precio{
-    width: 40%;
-    display: inline;
-}
 .descuento{
-    font-size: 60%;
+    font-weight: bold;
+    color: rgb(0, 216, 0);   
+}
+.precio{
+    font-weight: bold;
+}
+.descripcion{
+    margin-bottom: 20px;
+}
+.stock{
+    margin-bottom: 5px;
+    display: block;
+    border-top: white solid 3px;
+}
+.img-details{
+    margin-top: 30px;
+}
+.fa-thumbs-up{
     color: rgb(0, 216, 0);
-    display: inline;
-    width: 40%;
 }
-.contenedor_descripcion_producto{
-    background-color: white;
-    border-top: solid 3px rgb(197, 197, 197) ;
-    padding: 15px;
-    margin-top: -5px;
+h3{
+    text-align: center;
 }
+p{
+    margin-bottom: 20px;
+}
+form{
+    margin-bottom: 20px;
+}
+.fa-credit-card{
+font-size: 80%;
+}
+.fa-circle-info{
+    color: var(--azulc);
+    font-size: 80%;
+}
+
 
 @media (min-width: 361px){  
     .encabezado{
@@ -193,17 +192,7 @@ main img{
     .fa-cart-shopping{
         font-size: 70px;
     }
-    .down-productos{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    article{
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        width: 43% ;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
+   
     ul{
         display: block;
         visibility: visible;
@@ -219,9 +208,38 @@ main img{
         display: none;
     }
 
-   
-    
+    /* main */
+    .up-flex-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    .img-details{
+        width: 45%;
+    }
+    .contenedor-details{
+        width: 45%;
+        padding: 5px;
 
+    }
+    h2{
+        font-size: 33px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .precio{
+        font-size: 25px;
+    }
+    label{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    .info-producto{
+        padding: 8px;
+    }
 
 }
 @media (min-width: 769px){
@@ -247,23 +265,11 @@ main img{
         font-size: 25px;
         padding: 1%;
     }
-    .banner{
-        height: 249px;
+    .info-contains{
+        display: flex;
+
     }
-    h2{
-        font-size: 56px ;
-    }
-    article{
-        width: 32%;
-        font-size: 30px;
-    }
-    .down-productos article img{
-        
-        height: 426px;
-    }
-    .promocion{
-        width: 20%;
-    }
+
     
 }
 
