@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- metiendo el css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/registro.css">
+
+    <!-- imagenes -->
+    <script src="https://kit.fontawesome.com/5cc8ba3ff8.js" crossorigin="anonymous"></script>
+
+    <title>Pet Paradise</title>
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <!-- imagne del logo -->
+            <img class="encabezado__logo" src="img/logo-pet-paradise.png" alt="">
+            <!-- sitio para la barra de busqueda y el carrito -->
+            <div class="encabezado__buscador">                          
+                    <input type="text" placeholder="Busccar productos, marcas" >        
+                    <i class="fa-solid fa-magnifying-glass"></i>      
+            </div>
+            <div class="encabezado-carrito">
+                <a href="#"><i class="fa-solid fa-cart-shopping carrito-encabezado" ></i></a>
+            </div>
+        </div>
+
+        <div class="navegacion"> 
+         
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Perros</a></li>
+                <li><a href="#">Gatos</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Ingresar <i class="fa-solid fa-arrow-right-to-bracket li-img"></i></a></li>
+                <li><a href="#">Crear cuenta<i class="fa-solid fa-id-card li-img"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="barritas"> 
+            <i class="fa-solid fa-bars"></i> 
+        </div>
+    </header>
+    <img class="banner" src="img/banner.jpg" alt="banner">
+
+    <!-- INICIO SECTION MAIN -->
+
+    <main>
+        
+        <h3 class="titular__registrese">Regístrese.</h3>
+    
+            <!-- Inicio de los elementos del form -->
+            <form action="/home" method="post" class="form__margenInferior">
+           
+                <div class="contenedorElementosForm" id="nombre">
+                    <div class="contenedorLabel">
+                        <label for="nombreApellido" class="texto__general">Su nombre y apellido</label>
+                    </div>
+                    <div>
+                        <input class="texto__input" type="text" name="nombreApellido" placeholder="Nombre y apellido">
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="usuario">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="usuario" >Su usuario</label>
+                    </div>
+                    <div>
+                        <input class="texto__input" type="text" name="usuario" placeholder="Nombre de usuario">
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="email">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="email" >Su e-mail</label>
+                    </div>
+                    <div>
+                        <input class="texto__input" type="email" name="email" placeholder="@ email">
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="fechaNacimiento">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="fechaNacimiento" >Su fecha de nacimiento</label>
+                    </div>
+                    <div>
+                        <input class="texto__input" type="date" name="fechaNacimiento">
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="domicilio">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="domicilio" >Su domicilio</label>
+                    </div>
+                    <div>
+                        <input class="texto__input" type="text" name="domicilio" placeholder="Domicilio">
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="perfilUsuario">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="perfilUsuario" >Su perfil de usuario: comprador o vendedor</label>
+                    </div>
+                    <div class="texto__radioYcheckbox">
+                        <input type="radio" name="perfilUsuario" value="comprador"> Comprador <br>          
+                        <input type="radio" name="perfilUsuario" value="vendedor"> Vendedor        
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="intereses">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="intereses" >Sus intereses</label>
+                    </div>
+                    <div class="texto__radioYcheckbox">
+                        <input type="checkbox" name="intereses" value="electro"> Electro <br>        
+                        <input type="checkbox" name="intereses" value="moda"> Moda <br>        
+                        <input type="checkbox" name="intereses" value="hogar"> Hogar <br>        
+                        <input type="checkbox" name="intereses" value="jugueteria"> Jugueteria <br>        
+                        <input type="checkbox" name="intereses" value="vidaSana"> Vida Sana <br>        
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="fotoPerfil">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="fotoPerfil" >Suba su foto de perfil</label>
+                    </div>
+                    <div>
+                        <input type="file" name="fotoPerfil" accept=".jpg, .jpeg, .png">
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="password">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="password" >Su contraseña</label>
+                    </div>
+                    <div>
+                        <input class="texto__input" type="password" name="password" placeholder="Contraseña">
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm" id="password2">
+                    <div class="contenedorLabel">
+                        <label class="texto__general" for="password2" >Confirme su contraseña</label>
+                    </div>
+                    <div>
+                        <input class="texto__input" type="password" name="password2" placeholder="Confirme su contraseña">
+                    </div>
+                </div>
+                
+                <div class="contenedorElementosForm">
+                    <div class="contenedorLabel" >
+                        <label class="texto__general" ></label>
+                    </div>
+                    <div>
+                        <button class="form__button" type="submit">Enviar</button> <button class="form__button" type="reset">Borrar</button>
+                    </div>
+                </div>
+            </form>
+       
+    </main>
+
+    <!-- FIN DE LA SECCIÓN MAIN -->
+
+    <br>
+    <footer>
+        
+        <section>
+            <i  class="fa-solid fa-credit-card"></i>
+            <h4>Pagá con tarjeta o en efectivo </h4>
+            <p> Con Pet Paradise Cash, tenés cuotas sin interés con tarjeta o efectivo en
+            puntos de pago. ¡Y siempre es seguro! </p>
+        </section>
+        <section>
+            <i  class="fa-solid fa-gift"></i>
+            <h4>Envío gratis desde $ 2.500 </h4>
+            <p> Solo por estar registrad@ en Pet Paradise tenés envíos gratis en miles de
+            productos. Es un beneficio de Mercado Puntos. </p>
+        </section>
+        <section>
+            <i class="fa-solid fa-user-shield"></i>
+            <h4>Seguridad, de principio a fin </h4>
+            <p> ¿No te gusta? ¡Devolvelo! En Pet Paradise, no hay nada que no puedas hacer,
+            porque estás siempre protegid@. </p>
+        </section>
+        <br>
+        <section>
+            <p> Copyright © 1999-2020 Pet Paradise S.R.L. </p>
+        </section>
+    
+                        
+    </footer>
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
